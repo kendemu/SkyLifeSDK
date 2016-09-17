@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>だん ぷろじぇくと</title>
+    <link rel="stylesheet" href="css/fixed.css" type="text/css" />
+    <script src="js/jquery.min.js"></script>
+  </head>
+  <body style="background-color:#222">
+  <header>
+    <h1><span> だん ぷろじぇくと</span></h1>
+    <ul>
+      <li class="state_icon"><div class="state_green"></div></li>
+      <li>
+        <ul class="gauge_wrap">
+          <li>
+            <div><div class="gauge_main gauge_green" style="width: 80%;"></div></div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </header><!-- /header -->
+  <div class= "main">
+    <webview class="droneView" src="http://localhost:3002">
+  </div>
+  <footer>
+    <div class="center">
+      <div class="boxContainer">
+      	<div class="button">
+          <a onClick="clickButton(0)" id="zero">
+            <img src="img/green_button_text.png" width="100px" height="100px" onmouseover="this.src='img/green_button.png'" onmouseout="this.src='img/green_button_text.png'">
+          </a>
+        </div>
+      	<div class="button">
+          <a onClick="clickButton(1)" id="one">
+            <img src="img/yellow_button_text.png" width="100px" height="100px" onmouseover="this.src='img/yellow_button.png'" onmouseout="this.src='img/yellow_button_text.png'">
+          </a>
+        </div>
+      	<div class="button">
+          <a onClick="clickButton(2)" id="two">
+            <img src="img/red_button_text.png" width="100px" height="100px" onmouseover="this.src='img/red_button.png'" onmouseout="this.src='img/red_button_text.png'">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- /footer -->
+  <script type="text/javascript" src="js/john.js"></script>
+  </body>
+</html>

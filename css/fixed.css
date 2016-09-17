@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+body{
+  overflow: hidden;
+  background-image: url(../img/back.jpg);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #479137;
+  color: #555;
+  box-shadow: 0 0 0 1px #777700;
+  background-image: url(../img/dot.png);
+}
+
+header ul {
+  list-style: none;
+  margin: 0 0 0 0px;
+  position: absolute;
+  width:500px;
+  top: 0px;
+  right: 10px;
+}
+
+.state_icon{
+  margin-top:7px;
+  margin-left:50px;
+  width: 50px;
+  height: 50px;
+}
+.state_icon div{
+  width: 100%;
+  height: 100%;
+  border: 2px dotted #eee;
+}
+.state_red{
+  background-color: #F00;
+}
+
+.state_green{
+  background-color: #0F0;
+}
+
+.state_yellow{
+  background-color: #FF0;
+}
+
+header ul li {
+  float: left;
+  padding-left: 0px;
+  margin-left: 190px;
+}
+header ul li a {
+  color:#FFF;
+  font-size: 18px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #479137;
+  color: #555;
+  box-shadow: 0 0px 0px 1px #777700;
+  background-image: url(../img/dot.png);
+}
+
+.box {
+}
+
+.center{
+  text-align: center;
+}
+
+.button{
+  width:100px;
+  height:100px;
+  display: inline-block;
+}
+
+.button a {
+  width: 100%;
+  height: 100%;
+  margin:0;
+  padding: 0;
+}
+
+
+
+.droneView{
+  display: inline-flex;
+  background-color: #000;
+  width: 550px;
+  height: 450px;
+}
+
+.main{
+  text-align: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.gauge_wrap{
+  margin-top: 17px;
+}
+
+.gauge_wrap li > div {
+    background: -moz-linear-gradient(top, #555, #222);
+    background: -webkit-gradient(linear, left top, left bottom, from(#555), to(#222));
+    border: solid 2px #000;
+    width: 300px;
+    height: 32px;
+}
+
+.gauge_wrap .gauge_main {
+    height: 32px;
+}
+
+.gauge_red{
+  background: -moz-linear-gradient(top, #FF0000, #FFAAAA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF0000), to(#FFAAAA));
+}
+
+.gauge_yellow{
+  background: -moz-linear-gradient(top, #FFFF00, #FFFFAA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFF00), to(#FFFFAA));
+}
+
+.gauge_green{
+  background: -moz-linear-gradient(top, #00FF00, #AAFFAA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00FF00), to(#AAFFAA));
+}
