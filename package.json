@@ -1,6 +1,6 @@
 {
   "name": "scratch4d",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "scratch for drones",
   "main": "server.js",
   "directories": {
