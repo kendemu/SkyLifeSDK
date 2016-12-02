@@ -6,7 +6,7 @@ Scratch for drones.
 ```npm run start```
 
 ###Supported drone platforms
-A.R. Drone 2.0
+A.R. Drone 2.0  
 Bebop Drone(working)
 
 ###Supported Environment
