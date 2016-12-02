@@ -8,19 +8,21 @@
   },
   "dependencies": {
     "ar-drone": "^0.3.3",
+    "ar-drone-png-stream": "^2.0.0",
+    "electron-packager": "^8.3.0",
     "nodecopter-stream": "0.0.1"
   },
   "devDependencies": {},
   "scripts": {
-      "start": "electron .",
-      "build" : "asar pack . app.asar",
-      "clean" : "rm app.asar",
-      "deploy:win32": "electron-packager . Scratch4D --platform=win32 --arch=ia32 --version=1.4.10",
-      "deploy:win64": "electron-packager . Scratch4D --platform=win32 --arch=x64 --version=1.4.10",
-      "deploy:mac" : "electron-packager . Scratch4D --platform=darwin --arch=x64 --version=1.4.10",
-      "deploy:linux" : "electron-packager . Scratch4D --platform=linux --arch=x64 --version=1.4.10",
-      "deploy:arm" : "electron-packager . Scratch4D --platform=linux --arch=arm --version=1.4.10",
-      "deploy:armv7l" : "electron-packager . Scratch4D --platform=linux --arch=armv7l --version=1.4.10"
+    "start": "electron .",
+    "build": "asar pack . app.asar",
+    "clean": "rm app.asar",
+    "deploy:win32": "electron-packager . Scratch4D --platform=win32 --arch=ia32 --version=1.4.10",
+    "deploy:win64": "electron-packager . Scratch4D --platform=win32 --arch=x64 --version=1.4.10",
+    "deploy:mac": "electron-packager . Scratch4D --platform=darwin --arch=x64 --version=1.4.10",
+    "deploy:linux": "electron-packager . Scratch4D --platform=linux --arch=x64 --version=1.4.10",
+    "deploy:arm": "electron-packager . Scratch4D --platform=linux --arch=arm --version=1.4.10",
+    "deploy:armv7l": "electron-packager . Scratch4D --platform=linux --arch=armv7l --version=1.4.10"
   },
   "repository": {
     "type": "git",
