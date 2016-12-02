@@ -3,7 +3,7 @@ Scratch for drones.
 
 ###Setup and Running
 ```npm install```
-```npm start```
+```npm run start```
 
 ###Supported drone platforms
 A.R. Drone 2.0
@@ -19,5 +19,12 @@ Node.js
 Drone  
 
 
-###Packaging
-```asar pack . Scratch4D.asar```
+###Building
+1. clean files  
+```
+npm run clean
+```    
+2. building files
+```
+npm run build
+```    

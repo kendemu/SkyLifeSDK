@@ -12,7 +12,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "electron ."
+      "start": "electron .",
+      "build" : "asar pack . app.asar",
+      "clean" : "rm app.asar"
   },
   "repository": {
     "type": "git",
