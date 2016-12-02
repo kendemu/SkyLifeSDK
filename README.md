@@ -31,7 +31,9 @@ sudo apt-get install ffmpeg```
 1. clean files  
 ```
 npm run clean
-```    
+```
+
+
 2. building files
 ```
 npm run build
