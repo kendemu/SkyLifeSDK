@@ -88,7 +88,8 @@ ARMv7l
 ```
 npm run deploy:armv7l
 ```  
-
+####3. Move to ./Scratch4D-(platform)-(arch) directory and run program.
+  
 
 
 
