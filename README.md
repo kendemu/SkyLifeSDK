@@ -1,9 +1,9 @@
 # Scratch4D
 Scratch for drones.
 
-###Setup and Running
-```npm install```
-```npm run start```
+##Setup and Running
+1. ```npm install```  
+3. ```npm run start```
 
 ###Supported drone platforms
 A.R. Drone 2.0  
