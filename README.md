@@ -58,7 +58,8 @@ npm run build
 ```
 npm install -g electron-packager  
 ```  
-2. Deploy to target platform.    
+2. Deploy to target platform.
+  
 ####Windows  
 ia32   
 ```
