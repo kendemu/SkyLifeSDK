@@ -24,7 +24,8 @@ brew install --use-clang --HEAD ffmpeg --with-faac --with-fdk-aac --with-ffplay 
 sudo apt-get install software-properties-common    
 sudo add-apt-repository ppa:mc3man/trusty-media  
 sudo apt-get update  
-sudo apt-get install ffmpeg```  
+sudo apt-get install ffmpeg
+```  
 
 
 ###Building
