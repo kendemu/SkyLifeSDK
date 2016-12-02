@@ -61,18 +61,30 @@ npm install -g electron-packager
 2. Deploy to target platform.  
 ####Windows  
 ia32   
-```npm run deploy:win32```
-x64  
-```npm run deploy:win64```  
+```
+npm run deploy:win32
+```  
+x64    
+```
+npm run deploy:win64
+```  
 ####Mac  
-```npm run deploy:mac```
+```
+npm run deploy:mac
+```  
 ####Linux  
-```npm run deploy:linux```
+```
+npm run deploy:linux
+```  
 ####ARM Linux  
 ARM
-```npm run deploy:arm```
+```
+npm run deploy:arm
+```  
 ARMv7l
-```npm run deploy:armv7l```
+```
+npm run deploy:armv7l
+```  
 
 
 
