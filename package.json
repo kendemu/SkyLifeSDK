@@ -1,6 +1,6 @@
 {
   "name": "scratch4d",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "scratch for drones",
   "main": "server.js",
   "directories": {
@@ -33,7 +33,6 @@
   "bugs": {
     "url": "https://github.com/kendemu/Scratch4D/issues"
   },
-    "readme" : "README.md"
-    ,
+  "readme": "README.md",
   "homepage": "https://github.com/kendemu/Scratch4D#readme"
 }
