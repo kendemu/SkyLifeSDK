@@ -57,7 +57,9 @@ npm run build
 1. Install electron-packager
 ```
 npm install -g electron-packager  
-```  
+```
+
+
 2. Deploy to target platform.
   
 ####Windows  
