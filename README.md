@@ -5,6 +5,12 @@ Scratch for drones.
 1. ```npm install```  
 3. ```npm run start```
 
+##Configure Node.js
+1. Install Node Version Manager.  
+https://github.com/creationix/nvm  
+2. ```nvm ls-remote```  
+3. ```nvm use v5.0.0```
+
 ###Supported drone platforms
 A.R. Drone 2.0  
 Bebop Drone(working)
