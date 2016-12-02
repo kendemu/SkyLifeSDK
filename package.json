@@ -26,12 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kendemu/ScratchForARDrone.git"
+    "url": "git+https://github.com/kendemu/Scratch4D.git"
   },
-  "author": "",
+  "author": "Kensei Demura",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kendemu/ScratchForARDrone/issues"
+    "url": "https://github.com/kendemu/Scratch4D/issues"
   },
-  "homepage": "https://github.com/kendemu/ScratchForARDrone#readme"
+    "readme" : "README.md"
+    ,
+  "homepage": "https://github.com/kendemu/Scratch4D#readme"
 }
