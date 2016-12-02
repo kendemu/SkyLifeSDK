@@ -37,6 +37,11 @@ sudo apt-get install ffmpeg
 
 
 ###Building
+1. Install Dev tools.
+```
+npm install -g asar electron-packager
+```
+
 1. clean files  
 ```
 npm run clean
@@ -46,4 +51,31 @@ npm run clean
 2. building files
 ```
 npm run build
-```    
+```
+
+###Deploy
+1. Install electron-packager
+```
+npm install -g electron-packager  
+```  
+2. Deploy to target platform.  
+####Windows  
+ia32   
+```npm run deploy:win32```
+x64  
+```npm run deploy:win64```  
+####Mac  
+```npm run deploy:mac```
+####Linux  
+```npm run deploy:linux```
+####ARM Linux  
+ARM
+```npm run deploy:arm```
+ARMv7l
+```npm run deploy:armv7l```
+
+
+
+
+
+
