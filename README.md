@@ -10,8 +10,10 @@ A.R. Drone 2.0
 Bebop Drone(working)
 
 ###Supported Environment
-Windows 7/8.1/10  
-Mac
+Windows 7/8.1/10    
+Mac  
+Linux x86/x86_64  
+ARM Linux(working for Raspberry Pi)  
 
 ###External setup for UNIX
 ####Mac
