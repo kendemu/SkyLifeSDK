@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>だん ぷろじぇくと</title>
     <link rel="stylesheet" href="css/fixed.css" type="text/css" />
-    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="shortcut icon" href="snap/favicon.ico">
+    <script type="text/javascript" src="snap/morphic.js"></script>
+    <script type="text/javascript" src="snap/widgets.js"></script>
+    <script type="text/javascript" src="snap/blocks.js"></script>
+    <script type="text/javascript" src="snap/threads.js"></script>
+    <script type="text/javascript" src="snap/objects.js"></script>
+    <script type="text/javascript" src="snap/gui.js"></script>
+    <script type="text/javascript" src="snap/paint.js"></script>
+    <script type="text/javascript" src="snap/lists.js"></script>
+    <script type="text/javascript" src="snap/byob.js"></script>
+    <script type="text/javascript" src="snap/tables.js"></script>
+    <script type="text/javascript" src="snap/xml.js"></script>
+    <script type="text/javascript" src="snap/store.js"></script>
+    <script type="text/javascript" src="snap/locale.js"></script>
+    <script type="text/javascript" src="snap/cloud.js"></script>
+    <script type="text/javascript" src="snap/sha512.js"></script>
+    <script type="text/javascript" src="snap/FileSaver.min.js"></script>
+    <script type="text/javascript">
+      var world, world2;
+      window.onload = function () {
+      world = new WorldMorph(document.getElementById('world'), false);
+      new IDE_Morph().openIn(world);
+      loop();
+      };
+      function loop() {
+      requestAnimationFrame(loop);
+      world.doOneCycle();
+      }
+    </script>
   </head>
   <body style="background-color:#222">
-  <header>
-    <h1><span> だん ぷろじぇくと</span></h1>
-    <ul>
-      <li class="state_icon"><div class="state_green"></div></li>
-      <li>
-        <ul class="gauge_wrap">
-          <li>
-            <div><div class="gauge_main gauge_green" style="width: 80%;"></div></div>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </header><!-- /header -->
-  <div class= "main">
-    <webview class="droneView" src="http://localhost:3002">
-  </div>
-  <footer>
-    <div class="center">
-      <div class="boxContainer">
-      	<div class="button">
-          <a onClick="clickButton(0)" id="zero">
-            <img src="img/green_button_text.png" width="100px" height="100px" onmouseover="this.src='img/green_button.png'" onmouseout="this.src='img/green_button_text.png'">
-          </a>
-        </div>
-      	<div class="button">
-          <a onClick="clickButton(1)" id="one">
-            <img src="img/yellow_button_text.png" width="100px" height="100px" onmouseover="this.src='img/yellow_button.png'" onmouseout="this.src='img/yellow_button_text.png'">
-          </a>
-        </div>
-      	<div class="button">
-          <a onClick="clickButton(2)" id="two">
-            <img src="img/red_button_text.png" width="100px" height="100px" onmouseover="this.src='img/red_button.png'" onmouseout="this.src='img/red_button_text.png'">
-          </a>
-        </div>
+        <!--
+    <header>
+      <h1>
+	<span> だん ぷろじぇくと</span>
+      </h1>
+      <ul>
+	<li class="state_icon"><div class="state_green"></div></li>
+	<li>
+          <ul class="gauge_wrap">
+            <li>
+              <div>
+		<div class="gauge_main gauge_green" style="width: 80%;"></div>
+	      </div>
+            </li>
+          </ul>
+	</li>
+      </ul>
+    </header>
+    -->
+    <main class="main">
+      <div class="row">
+	<canvas class="col-md-12 col-sm-12 col-xs-12" id="world" tabindex="1" width="1600" height="800"></canvas>
       </div>
-    </div>
-  </footer><!-- /footer -->
-  <script type="text/javascript" src="js/john.js"></script>
+    </main>
+    <footer>
+      <div class="center">
+	<div class="boxContainer">
+          <button class="button" onClick="clickButton(0)" id="zero">
+            <img src="img/green_button_text.png" width="100px" height="100px" onmouseover="this.src='img/green_button.png'" onmouseout="this.src='img/green_button_text.png'">
+          </button>
+          <button class="button" onClick="clickButton(1)" id="one">
+            <img src="img/yellow_button_text.png" width="100px" height="100px" onmouseover="this.src='img/yellow_button.png'" onmouseout="this.src='img/yellow_button_text.png'">
+	  </button>
+          <button class="button" onClick="clickButton(2)" id="two">
+            <img src="img/red_button_text.png" width="100px" height="100px" onmouseover="this.src='img/red_button.png'" onmouseout="this.src='img/red_button_text.png'">
+          </button>
+	</div>
+      </div>
+    </footer><!-- /footer -->
+    <script type="text/javascript" src="js/john.js"></script>
   </body>
 </html>

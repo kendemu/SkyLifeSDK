@@ -77,10 +77,14 @@ footer {
   text-align: center;
 }
 
-.button{
+button{
   width:100px;
   height:100px;
   display: inline-block;
+  background:none;
+  border:0;
+  width:auto;
+  overflow:visible;
 }
 
 .button a {
@@ -88,15 +92,6 @@ footer {
   height: 100%;
   margin:0;
   padding: 0;
-}
-
-
-
-.droneView{
-  display: inline-flex;
-  background-color: #000;
-  width: 550px;
-  height: 450px;
 }
 
 .main{

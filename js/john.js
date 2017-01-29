@@ -1,4 +1,5 @@
 var xmlHttpRequest = new XMLHttpRequest();
+
 xmlHttpRequest.onreadystatechange = function()
 {
     var READYSTATE_COMPLETED = 4;

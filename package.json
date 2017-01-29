@@ -9,20 +9,29 @@
   "dependencies": {
     "ar-drone": "^0.3.3",
     "ar-drone-png-stream": "^2.0.0",
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0",
+    "babelify": "^7.3.0",
+    "bootstrap": "^3.3.7",
     "electron-packager": "^8.3.0",
-    "nodecopter-stream": "0.0.1"
+    "nodecopter-stream": "0.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-grid-layout": "^0.13.9"
   },
   "devDependencies": {},
   "scripts": {
     "start": "electron .",
-    "build": "asar pack . app.asar",
+    "build": "browserify -t [babelify --presets [react es2015] ] js/main.js -o js/main.min.js",
     "clean": "rm app.asar",
-    "deploy:win32": "electron-packager . Scratch4D --platform=win32 --arch=ia32 --version=1.4.10",
-    "deploy:win64": "electron-packager . Scratch4D --platform=win32 --arch=x64 --version=1.4.10",
-    "deploy:mac": "electron-packager . Scratch4D --platform=darwin --arch=x64 --version=1.4.10",
-    "deploy:linux": "electron-packager . Scratch4D --platform=linux --arch=x64 --version=1.4.10",
-    "deploy:arm": "electron-packager . Scratch4D --platform=linux --arch=arm --version=1.4.10",
-    "deploy:armv7l": "electron-packager . Scratch4D --platform=linux --arch=armv7l --version=1.4.10"
+    "deploy:win32": "electron-packager . Scratch4D --platform=win32 --arch=ia32 --electron-version=1.4.10",
+    "deploy:win64": "electron-packager . Scratch4D --platform=win32 --arch=x64 --electron-version=1.4.10",
+    "deploy:mac": "electron-packager . Scratch4D --platform=darwin --arch=x64 --electron-version=1.4.10",
+    "deploy:linux": "electron-packager . Scratch4D --platform=linux --arch=x64 --electron-version=1.4.10",
+    "deploy:arm": "electron-packager . Scratch4D --platform=linux --arch=arm --electron-version=1.4.10",
+    "deploy:armv7l": "electron-packager . Scratch4D --platform=linux --arch=armv7l --electron-version=1.4.10"
   },
   "repository": {
     "type": "git",
@@ -33,7 +42,6 @@
   "bugs": {
     "url": "https://github.com/kendemu/Scratch4D/issues"
   },
-    "readme" : "README.md"
-    ,
+  "readme": "README.md",
   "homepage": "https://github.com/kendemu/Scratch4D#readme"
 }
