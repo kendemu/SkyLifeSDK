@@ -35,7 +35,7 @@ app.on('ready', () => {
 	    {
 		host: 'localhost',
 		port: '3001',
-		path: '/land'
+		path: '/api/robots/Scratch4D/devices/drone/commands/land'
 	    }
 	    ,(response) => {console.log(response)});
 	
