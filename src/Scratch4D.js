@@ -17,7 +17,7 @@ app.on('window-all-closed', () => {
 	    {
 		host: 'localhost',
 		port: '3001',
-		path: '/land'
+		path: '/api/robots/Scratch4D/devices/drone/commands/land'
 	    }
 	    ,(response) => {console.log(response)});
 	app.quit();
