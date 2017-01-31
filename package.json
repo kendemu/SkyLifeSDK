@@ -25,7 +25,8 @@
   "devDependencies": {},
   "scripts": {
     "start": "electron .",
-    "build": "browserify -t [babelify --presets [react es2015] ] js/main.js -o js/main.min.js",
+      "build": "browserify -t [babelify --presets [react es2015] ] js/main.js -o js/main.min.js",
+      "build:server" : "babel -w src/*.js -o js/*.min.js",
     "clean": "rm app.asar",
     "deploy:win32": "electron-packager . Scratch4D --platform=win32 --arch=ia32 --electron-version=1.4.10",
     "deploy:win64": "electron-packager . Scratch4D --platform=win32 --arch=x64 --electron-version=1.4.10",

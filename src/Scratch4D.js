@@ -25,7 +25,8 @@ app.on('window-all-closed', () => {
 });
 
 app.on('ready', () => {
-    const DroneServer = new DroneHttpServer(PORT);
+    const DroneServer = new DroneHttpServer("ARDrone");
+    //new DroneServer("BebopDrone");
     DroneServer.start();
     mainWindow = new BrowserWindow({width:1920, height:1080});
     mainWindow.loadURL('file://' + __dirname + '/../index.html');	
