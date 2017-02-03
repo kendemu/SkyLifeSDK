@@ -1,5 +1,5 @@
-# Scratch4D
-Scratch for drones.
+# SkyLife SDK
+Integrated Development Environment for drones.
 
 ##Setup and Running
 1. ```npm install```  
@@ -13,13 +13,13 @@ https://github.com/creationix/nvm
 
 ###Supported drone platforms
 A.R. Drone 2.0  
-Bebop Drone(working)
+Bebop Drone  
 
 ###Supported Environment
 Windows 7/8.1/10    
-Mac  
+Mac OS X  
 Linux x86/x86_64  
-ARM Linux(working for Raspberry Pi)  
+ARM Linux  
 
 ###External setup for UNIX
 ####Mac
@@ -35,25 +35,7 @@ sudo apt-get update
 sudo apt-get install ffmpeg
 ```  
 
-
-###Building
-####1. Install Dev tools.
-```
-npm install -g asar electron-packager
-```
-
-####2. clean files  
-```
-npm run clean
-```
-
-
-####3. build files
-```
-npm run build
-```
-
-###Deploy
+###Deploy for your environment  
 ####1. Install electron-packager
 ```
 npm install -g electron-packager  
@@ -90,7 +72,6 @@ npm run deploy:armv7l
 ```  
 ####3. Move to ./Scratch4D-(platform)-(arch) directory and run program.
   
-
 
 
 
