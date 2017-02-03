@@ -36,8 +36,8 @@ sudo apt-get update
 sudo apt-get install ffmpeg
 ```  
 
-###Building    
-####Windows  
+##Building    
+###Windows  
 ia32   
 ```
 npm run build:win32
@@ -46,15 +46,15 @@ x64
 ```
 npm run build:win64
 ```  
-####Mac  
+###Mac  
 ```
 npm run build:mac
 ```  
-####Linux  
+###Linux  
 ```
 npm run build:linux
 ```  
-####ARM Linux  
+###ARM Linux  
 ARM
 ```
 npm run build:arm
@@ -63,7 +63,7 @@ ARMv7l
 ```
 npm run build:armv7l
 ```  
-####3. Move to ./SkyLifeSDK-(platform)-(arch) directory and run program.
+###3. Move to ./SkyLifeSDK-(platform)-(arch) directory and run program.
   
 
 
