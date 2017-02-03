@@ -1,7 +1,6 @@
 import http from "http";
 import Bebop from "node-bebop";
 
-
 class DroneHttpServer{
     constructor(drone){
 	this.drone = drone;
@@ -9,7 +8,7 @@ class DroneHttpServer{
     }
     
     start(){
-	require( __dirname +"/" + this.drone +".min.js");
+	require( __dirname +"/" + this.drone);
     }
 }
 export default DroneHttpServer;

@@ -60,4 +60,3 @@ _cylon2.default.robot({
 		});
 	}
 }).start();
-

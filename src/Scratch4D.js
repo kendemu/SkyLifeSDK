@@ -1,5 +1,5 @@
 import electron from 'electron';
-import DroneHttpServer from "./DroneHttpServer.min";
+import DroneHttpServer from "./DroneHttpServer";
 
 const app = electron.app;
 const BrowserWindow = electron.BrowserWindow;
@@ -26,7 +26,6 @@ app.on('window-all-closed', () => {
 
 app.on('ready', () => {
     const DroneServer = new DroneHttpServer("ARDrone");
-    //new DroneServer("BebopDrone");
     DroneServer.start();
     mainWindow = new BrowserWindow({width:1920, height:1080});
     mainWindow.loadURL('file://' + __dirname + '/../index.html');	

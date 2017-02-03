@@ -25,4 +25,3 @@ _cylon2.default.robot({
 
    work: function work(my) {}
 }).start();
-

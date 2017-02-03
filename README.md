@@ -35,15 +35,7 @@ sudo apt-get update
 sudo apt-get install ffmpeg
 ```  
 
-###Deploy for your environment  
-####1. Install electron-packager
-```
-npm install -g electron-packager  
-```
-
-
-####2. Deploy to target platform.
-  
+###Building    
 ####Windows  
 ia32   
 ```

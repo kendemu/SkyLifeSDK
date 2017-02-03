@@ -29,7 +29,7 @@ var DroneHttpServer = function () {
    _createClass(DroneHttpServer, [{
       key: "start",
       value: function start() {
-         require(__dirname + "/" + this.drone + ".min.js");
+         require(__dirname + "/" + this.drone);
       }
    }]);
 
@@ -37,4 +37,3 @@ var DroneHttpServer = function () {
 }();
 
 exports.default = DroneHttpServer;
-
