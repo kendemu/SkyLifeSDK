@@ -1,6 +1,6 @@
 {
-  "name": "scratch4d",
-  "version": "2.0.0",
+  "name": "SkyLifeSDK",
+  "version": "4.0.0-alpha",
   "description": "scratch for drones",
   "main": "src/Scratch4D.min.js",
   "directories": {
