@@ -40,30 +40,30 @@ sudo apt-get install ffmpeg
 ####Windows  
 ia32   
 ```
-npm run deploy:win32
+npm run build:win32
 ```  
 x64    
 ```
-npm run deploy:win64
+npm run build:win64
 ```  
 ####Mac  
 ```
-npm run deploy:mac
+npm run build:mac
 ```  
 ####Linux  
 ```
-npm run deploy:linux
+npm run build:linux
 ```  
 ####ARM Linux  
 ARM
 ```
-npm run deploy:arm
+npm run build:arm
 ```  
 ARMv7l
 ```
-npm run deploy:armv7l
+npm run build:armv7l
 ```  
-####3. Move to ./Scratch4D-(platform)-(arch) directory and run program.
+####3. Move to ./SkyLifeSDK-(platform)-(arch) directory and run program.
   
 
 
