@@ -3,7 +3,8 @@ Integrated Development Environment for drones.
 ![drone](img/drone.png)  
 
 ##Setup and Running
-1. ```npm install```  
+1. ```git clone --recursive https://github.com/kendemu/SkyLifeSDK```  
+2. ```npm install```  
 3. ```npm run start```
 
 ##Configure Node.js
