@@ -36,7 +36,7 @@ app.on('window-all-closed', function () {
 app.on('ready', function () {
 	var DroneServer = new _DroneHttpServer2.default("ARDrone");
 	DroneServer.start();
-	mainWindow = new BrowserWindow({ width: 1920, height: 1080 });
+	mainWindow = new BrowserWindow({ width: 1920, height: 1080, icon: __dirname + '/../drone.ico' });
 	mainWindow.loadURL('file://' + __dirname + '/../index.html');
 	mainWindow.on('closed', function () {
 		http.request({

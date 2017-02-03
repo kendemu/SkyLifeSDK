@@ -27,7 +27,7 @@ app.on('window-all-closed', () => {
 app.on('ready', () => {
     const DroneServer = new DroneHttpServer("ARDrone");
     DroneServer.start();
-    mainWindow = new BrowserWindow({width:1920, height:1080});
+    mainWindow = new BrowserWindow({width:1920, height:1080, icon: __dirname + '/../drone.ico'});
     mainWindow.loadURL('file://' + __dirname + '/../index.html');	
     mainWindow.on('closed', () => {
 	http.request(

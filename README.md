@@ -1,5 +1,6 @@
 # SkyLife SDK
-Integrated Development Environment for drones.
+Integrated Development Environment for drones.  
+![drone](img/drone.png)  
 
 ##Setup and Running
 1. ```npm install```  

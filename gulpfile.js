@@ -3,7 +3,8 @@ var babel = require("gulp-babel");
 
 var files = [
     './index.html',
-    './snap/*'
+    './snap/*',
+    './img/*'
 ];
 
 gulp.task("move", function(){

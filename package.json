@@ -39,12 +39,12 @@
   "scripts": {
     "start": "electron .",
     "build:server": "./node_modules/.bin/gulp",
-    "build:win32": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=win32 --arch=ia32 --electron-version=1.4.10",
-    "build:win64": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=win32 --arch=x64 --electron-version=1.4.10",
-    "build:mac": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=darwin --arch=x64 --electron-version=1.4.10",
-    "build:linux": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=linux --arch=x64 --electron-version=1.4.10",
-    "build:arm": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=linux --arch=arm --electron-version=1.4.10",
-    "build:armv7l": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=linux --arch=armv7l --electron-version=1.4.10"
+    "build:win32": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=win32 --arch=ia32 --electron-version=1.4.10 --icon=img/drone.ico",
+    "build:win64": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=win32 --arch=x64 --electron-version=1.4.10 --icon=img/drone.ico",
+    "build:mac": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=darwin --arch=x64 --electron-version=1.4.10 --icon=img/drone.ico",
+    "build:linux": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=linux --arch=x64 --electron-version=1.4.10 --icon=img/drone.ico",
+    "build:arm": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=linux --arch=arm --electron-version=1.4.10 --icon=img/drone.ico",
+    "build:armv7l": "./node_modules/.bin/electron-packager . SkyLifeSDK --platform=linux --arch=armv7l --electron-version=1.4.10 --icon=img/drone.ico"
   },
   "repository": {
     "type": "git",
