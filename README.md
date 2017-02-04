@@ -15,7 +15,9 @@ https://github.com/creationix/nvm
 
 ##Supported drone platforms
 A.R. Drone 2.0  
+![A.R. Drone 2.0](view/img/ardrone.png)  
 Bebop Drone  
+![Bebop Drone](view/img/bebopdrone.png)  
 
 ##Supported Environment
 Windows 7/8.1/10    
