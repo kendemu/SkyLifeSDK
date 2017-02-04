@@ -1,6 +1,6 @@
 # SkyLife SDK
 Integrated Development Environment for drones.  
-![drone](img/drone.png)  
+![drone](view/img/drone.png)  
 
 ##Setup and Running
 1. ```git clone --recursive https://github.com/kendemu/SkyLifeSDK```  
