@@ -2,9 +2,8 @@ var gulp = require("gulp");
 var babel = require("gulp-babel");
 
 var files = [
-    './index.html',
-    './snap/*',
-    './img/*'
+    './view/*/*',
+    './view/*.html'
 ];
 
 gulp.task("move", function(){

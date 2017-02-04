@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ドローンを選択</title>
+    <link rel="stylesheet" href="css/notosansjapanese.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/setup.css" type="text/css" />
+    <link rel="shortcut icon" href="img/drone.ico">
+    <script type="text/javascript" src="js/setup.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+	<div class="row">
+	  <h1 class="text-center">SkyLife SDK<img src="img/drone.png"></h1>
+	</div>
+	<div class="row">
+	  <h2 class="text-center">ドローンを選択してください。</h2>
+	  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 selection" onclick="chooseDrone('A.R. Drone')">
+	    <img class="img-responsive" src="img/ardrone.png" width="600" height="450">
+	    <h3 class="text-center">A.R. Drone 1.0/2.0</h3>
+	  </div>
+	  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 selection" onclick="chooseDrone('Bebop Drone')">
+	    <img class="img-responsive" src="img/bebopdrone.png" width="600" height="450">
+	    <h3 class="text-center">Bebop Drone</h3>
+	  </div>
+	</div>
+      </main>
+    </div>
+  </body>
+</html>

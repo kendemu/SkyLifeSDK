@@ -1,0 +1,7 @@
+var ipc = require("electron").ipcRenderer;
+
+function chooseDrone(drone){
+    ipc.send("drone", drone);
+    setTimeout(function(){
+	location.href="index.html"}, 500);
+}

@@ -1,5 +1,5 @@
 digraph G{
-	label="Scratch4Dの設計"
+	label="SkyLifeSDKの設計"
 	subgraph cluster_view{
 		label="UI層"
 		"electron" "WebView"

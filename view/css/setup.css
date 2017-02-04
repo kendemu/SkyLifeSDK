@@ -1,0 +1,44 @@
+body {
+    overflow-x: hidden;
+    font-family: "Noto Sans Japanese", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #86CEFA;
+    color: #FFFFFF;
+}
+
+.selection{
+    -webkit-transition: 1.0s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition: 1.0s;
+    -moz-transition-timing-function: ease-out;
+    -o-transition: 1.0s;
+    -o-transition-timing-function: ease-out;
+    transition: 1.0s;
+    transition-timing-function: ease-out;
+}
+
+.selection:hover {
+    box-shadow : 0 0 12px #000;
+    -webkit-box-shadow : 0 0 12px #000;
+    -o-box-shadow : 0 0 12px #000;
+    -moz-box-shadow : 0 0 12px #000;
+    background-color: #000;
+
+    
+    box-shadow : 0 0 12px #fa87ce;
+    -webkit-box-shadow : 0 0 12px #fa87ce;
+    -o-box-shadow : 0 0 12px #fa87ce;
+    -moz-box-shadow : 0 0 12px #fa87ce;
+    background-color: #fa87ce;
+
+}
+
+.selection:active{
+    -webkit-transform: scale(1.75, 1.75);
+    -moz-transform: scale(1.75, 1.75);
+    -o-transform: scale(1.75, 1.75);
+    transform: scale(1.75, 1.75);
+}
+
+.drone{
+    background-image: url(../img/drone.png);
+}
