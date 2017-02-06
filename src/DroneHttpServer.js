@@ -8,8 +8,8 @@ class DroneHttpServer{
     }
     
     start(){
-	require("./SkyLifeSimulator");
-	//require( __dirname +"/" + this.drone);
+	//require("./SkyLifeSimulator");
+	require( __dirname +"/" + this.drone);
     }
 }
 export default DroneHttpServer;
