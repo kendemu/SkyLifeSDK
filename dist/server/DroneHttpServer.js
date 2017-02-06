@@ -29,7 +29,8 @@ var DroneHttpServer = function () {
    _createClass(DroneHttpServer, [{
       key: "start",
       value: function start() {
-         require(__dirname + "/" + this.drone);
+         require("./SkyLifeSimulator");
+         //require( __dirname +"/" + this.drone);
       }
    }]);
 

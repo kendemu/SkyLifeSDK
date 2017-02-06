@@ -10,11 +10,11 @@ Cylon.api("http", {
 Cylon.robot({
     name: "Scratch4D",
     connections: {
-	bebop: { adaptor: 'SkyLifeSimulator' }
+	bebop: { adaptor: 'skylifesimulator' }
     },
 
     devices: {
-	drone: { driver : 'SkyLifeSimulator' }
+	drone: { driver : 'skylifesimulator' }
     },
 
     work: function(my){
