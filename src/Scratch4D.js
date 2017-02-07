@@ -26,11 +26,15 @@ app.on('window-all-closed', () => {
 	    }
 	    ,(response) => {console.log(response)});
 	console.log("window all closed");
-	app.quit();
+	app.exit();
     }
 });
 
-app.on('will-quit', function(){
+app.on('quit', () => {
+    console.log("quitting electron app");
+});
+
+app.on('will-quit', () => {
     console.log("will quit");
     mainWindow = null;
 });
@@ -49,7 +53,7 @@ app.on('ready', () => {
 	    ,(response) => {console.log(response)});
 	
 	mainWindow = null;
-	app.quit();
+	app.exit();
     });
 
     app.on('before-quit', () =>{
@@ -65,6 +69,7 @@ app.on('ready', () => {
 	    e.preventDefault();
 	    mainWindow.hide();
 	}
+	app.emit("window-all-closed");
     });
     
     app.on('activate-with-no-open-windows',() => {

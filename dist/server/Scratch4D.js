@@ -28,65 +28,68 @@ var server = null;
 var force_quit = false;
 
 app.on('window-all-closed', function () {
-			console.log(process.platform);
-			if (process.platform != 'darwin') {
-						_http2.default.request({
-									host: 'localhost',
-									port: '3001',
-									path: '/api/robots/Scratch4D/devices/drone/commands/land'
-						}, function (response) {
-									console.log(response);
-						});
-						console.log("window all closed");
-						app.quit();
-			}
+				if (process.platform != 'darwin') {
+								_http2.default.request({
+												host: 'localhost',
+												port: '3001',
+												path: '/api/robots/Scratch4D/devices/drone/commands/land'
+								}, function (response) {
+												console.log(response);
+								});
+								console.log("window all closed");
+								app.exit();
+				}
+});
+
+app.on('quit', function () {
+				console.log("quitting electron app");
 });
 
 app.on('will-quit', function () {
-			console.log("will quit");
-			mainWindow = null;
+				console.log("will quit");
+				mainWindow = null;
 });
 
 app.on('ready', function () {
-			mainWindow = new BrowserWindow({ width: 1920, height: 1080, icon: __dirname + '/../drone.ico' });
-			mainWindow.loadURL('file://' + __dirname + '/../view/setup.html');
-			mainWindow.on('closed', function () {
-						console.log("window closed");
-						_http2.default.request({
-									host: 'localhost',
-									port: '3001',
-									path: '/api/robots/Scratch4D/devices/drone/commands/land'
-						}, function (response) {
-									console.log(response);
-						});
+				mainWindow = new BrowserWindow({ width: 1920, height: 1080, icon: __dirname + '/../drone.ico' });
+				mainWindow.loadURL('file://' + __dirname + '/../view/setup.html');
+				mainWindow.on('closed', function () {
+								console.log("window closed");
+								_http2.default.request({
+												host: 'localhost',
+												port: '3001',
+												path: '/api/robots/Scratch4D/devices/drone/commands/land'
+								}, function (response) {
+												console.log(response);
+								});
 
-						mainWindow = null;
-						app.quit();
-			});
+								mainWindow = null;
+								app.exit();
+				});
 
-			app.on('before-quit', function () {
-						console.log("app wants to quit");
-						mainWindow.removeAllListeners("close");
-						mainWindow.close();
-						force_quit = true;
-			});
+				app.on('before-quit', function () {
+								console.log("app wants to quit");
+								mainWindow.removeAllListeners("close");
+								mainWindow.close();
+								force_quit = true;
+				});
 
-			mainWindow.on('close', function (e) {
-						console.log("close");
-						if (!force_quit) {
-									e.preventDefault();
-									mainWindow.hide();
-						}
-						app.emit("window-all-closed");
-			});
+				mainWindow.on('close', function (e) {
+								console.log("close");
+								if (!force_quit) {
+												e.preventDefault();
+												mainWindow.hide();
+								}
+								app.emit("window-all-closed");
+				});
 
-			app.on('activate-with-no-open-windows', function () {
-						mainWindow.show();
-			});
+				app.on('activate-with-no-open-windows', function () {
+								mainWindow.show();
+				});
 });
 
 ipc.on('drone', function (event, arg) {
-			console.log("ipc called");
-			var DroneServer = new _DroneHttpServer2.default(arg);
-			DroneServer.start();
+				console.log("ipc called");
+				var DroneServer = new _DroneHttpServer2.default(arg);
+				DroneServer.start();
 });
