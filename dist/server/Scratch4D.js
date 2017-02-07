@@ -28,6 +28,7 @@ var server = null;
 var force_quit = false;
 
 app.on('window-all-closed', function () {
+			console.log(process.platform);
 			if (process.platform != 'darwin') {
 						_http2.default.request({
 									host: 'localhost',
@@ -36,6 +37,7 @@ app.on('window-all-closed', function () {
 						}, function (response) {
 									console.log(response);
 						});
+						console.log("window all closed");
 						app.quit();
 			}
 });
@@ -62,17 +64,20 @@ app.on('ready', function () {
 						app.quit();
 			});
 
+			app.on('before-quit', function () {
+						console.log("app wants to quit");
+						mainWindow.removeAllListeners("close");
+						mainWindow.close();
+						force_quit = true;
+			});
+
 			mainWindow.on('close', function (e) {
 						console.log("close");
 						if (!force_quit) {
 									e.preventDefault();
 									mainWindow.hide();
 						}
-			});
-
-			app.on('before-quit', function () {
-						console.log("app wants to quit");
-						force_quit = true;
+						app.emit("window-all-closed");
 			});
 
 			app.on('activate-with-no-open-windows', function () {

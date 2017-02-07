@@ -25,6 +25,7 @@ app.on('window-all-closed', () => {
 		path: '/api/robots/Scratch4D/devices/drone/commands/land'
 	    }
 	    ,(response) => {console.log(response)});
+	console.log("window all closed");
 	app.quit();
     }
 });
@@ -51,6 +52,13 @@ app.on('ready', () => {
 	app.quit();
     });
 
+    app.on('before-quit', () =>{
+	console.log("app wants to quit");
+	mainWindow.removeAllListeners("close");
+	mainWindow.close();
+	force_quit = true;
+    });
+
     mainWindow.on('close', (e) => {
 	console.log("close");
 	if(!force_quit){
@@ -59,11 +67,6 @@ app.on('ready', () => {
 	}
     });
     
-    app.on('before-quit', () =>{
-	console.log("app wants to quit");
-	force_quit = true;
-    });
-
     app.on('activate-with-no-open-windows',() => {
 	mainWindow.show();
     });
@@ -75,3 +78,4 @@ ipc.on('drone', (event, arg) => {
     const DroneServer = new DroneHttpServer(arg);
     DroneServer.start();
 });
+
