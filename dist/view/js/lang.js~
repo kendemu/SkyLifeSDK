@@ -1,0 +1,12 @@
+
+var language = {"japanese" : "ja.html", "hiragana" : "hira.html", "english" : "en.html"}
+
+function chooseLang(lang){
+    if(lang in language){
+	setTimeout(function(){
+	    location.href=language[lang]}, 500);
+    }
+    else{
+	console.log("Language not implemented.");
+    }
+}
