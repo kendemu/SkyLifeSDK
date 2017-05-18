@@ -73,10 +73,17 @@ app.on('ready', () => {
     });
     
     app.on('activate-with-no-open-windows',() => {
-	mainWindow.show();
+	app.emit("ready");
+	//mainWindow.show();
     });
+
+    app.on('activate', () => {
+	app.emit("ready");
+    });
+
     
 });
+
 
 ipc.on('drone', (event, arg) => {
     console.log("ipc called");

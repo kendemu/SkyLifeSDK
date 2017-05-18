@@ -1,0 +1,35 @@
+digraph G{
+	label="morphic.jsのUMLクラス図"
+	node [shape=box];
+
+	edge [dir=back, arrowtail=onormal, arrowsize=1.5];
+
+	"Node" -> "Morph"
+	"Morph" -> "HandleMorph"
+	"Morph" -> "PenMorph"
+	"Morph" -> "ColorPaletteMorph"
+	"ColorPaletteMorph" -> "GrayPaletteMorph"
+	"Morph" -> "ColorPickerMorph"
+	"Morph" -> "BlinkerMorph"
+	"BlinkerMorph" -> "CursorMorph"
+	"Morph" -> "BoxMorph"
+	"BoxMorph" -> "CircleBoxMorph"
+	"SliderMorph" -> "CircleBoxMorph"
+	"SliderButtonMorph" -> "CircleBoxMorph"
+	"BoxMorph" -> "SpeechBubbleMorph"
+	"BoxMorph" -> "MouseSensorMorph"
+	"BoxMorph" -> "InspectorMorph"
+	"BoxMorph" -> "MenuMorph"
+	"Morph" -> "FrameMorph"
+	"FrameMorph" -> "ScrollFrameMorph"
+	"ScrollFrameMorph" -> "ListMorph"
+	"FrameMorph" -> "StringFieldMorph"
+	"FrameMorph" -> "WorldMorph"
+	"Morph" -> "TriggerMorph"
+	"TriggerMorph" -> "MenuItemMorph"
+	"Morph" -> "StringMorph"
+	"Morph" -> "TextMorph"
+	"Morph" -> "BouncerMorph"
+	"Morph" -> "HandMorph"
+	
+}
