@@ -16,6 +16,8 @@
     "cylon-bebop": "^0.5.0",
     "cylon-skylifesimulator": "git+https://github.com/kendemu/cylon-skylifesimulator.git",
     "devtron": "^1.4.0",
+    "google-auth-library": "^0.11.0",
+    "googleapis": "^22.2.0",
     "node-bebop": "^0.6.0",
     "reactxp": "^0.42.0-rc.6",
     "socket.io": "^1.7.2"

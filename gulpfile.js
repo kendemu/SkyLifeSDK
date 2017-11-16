@@ -1,5 +1,10 @@
 var gulp = require("gulp");
 var babel = require("gulp-babel");
+var fs = require("fs");
+var readline = require("readline");
+var google = require("googleapis");
+var googleAuth = require("google-auth-library");
+
 
 var files = [
     './view/*/*',
